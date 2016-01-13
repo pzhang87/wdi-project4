@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://127.0.0.1:27017/pr-vods');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/pr-vods');
 
 var Schema = mongoose.Schema,
     ObjectId = Schema.Types.ObjectId
@@ -7,13 +7,13 @@ var Schema = mongoose.Schema,
 
 //define schema for player
 var PlayerSchema = new Schema({
-  challonge_id: Number,
+  id: Number,
   name: String,
   rank: Number,
   team: String,
   characters: [],
   profile_image: String,
-  tournaments: []
+  videos: []
 });
 
 var VideoSchema = new Schema({

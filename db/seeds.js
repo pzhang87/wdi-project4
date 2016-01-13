@@ -1,7 +1,7 @@
 var mongoose = require('mongoose')
 var conn = mongoose.connect('mongodb://127.0.0.1:27017/pr-vods')
 var PlayerModel = require("../models/player")
-var VideoModel = require("../models/video")
+// var VideoModel = require("../models/video")
 
 conn.on("error", function(err){
   console.log("Oops! Mongo threw an error. Is `mongod` running?");
@@ -26,7 +26,7 @@ var nintendude = new PlayerModel({
   videos: []
 });
 
-nintendude.save();
+nintendude.save().then(console.log("saved!"));
 
 var chillindude = new PlayerModel({
   id: '',
@@ -38,7 +38,7 @@ var chillindude = new PlayerModel({
   videos: [],
 });
 
-chillindude.save();
+chillindude.save().then(console.log("saved!"));
 
 var redd = new PlayerModel({
   id: '',
@@ -50,7 +50,7 @@ var redd = new PlayerModel({
   videos: [],
 });
 
-redd.save();
+redd.save().then(console.log("saved!"));
 
 var chudat = new PlayerModel({
   id: '',
@@ -62,7 +62,7 @@ var chudat = new PlayerModel({
   videos: [],
 });
 
-chudat.save();
+chudat.save().then(console.log("saved!"));
 
 var milkman = new PlayerModel({
   id: '',
@@ -74,7 +74,7 @@ var milkman = new PlayerModel({
   videos: [],
 });
 
-milkman.save();
+milkman.save().then(console.log("saved!"));
 
 var llod = new PlayerModel({
   id: '',
@@ -86,7 +86,7 @@ var llod = new PlayerModel({
   videos: []
 });
 
-llod.save();
+llod.save().then(console.log("saved!"));
 
 var plank = new PlayerModel({
   id: '',
@@ -98,7 +98,7 @@ var plank = new PlayerModel({
   videos: []
 });
 
-plank.save();
+plank.save().then(console.log("saved!"));
 
 var cyrain = new PlayerModel({
   id: '',
@@ -110,7 +110,7 @@ var cyrain = new PlayerModel({
   videos: []
 });
 
-cyrain.save();
+cyrain.save().then(console.log("saved!"));
 
 var doh = new PlayerModel({
   id: '',
@@ -122,7 +122,7 @@ var doh = new PlayerModel({
   videos: []
 });
 
-doh.save();
+doh.save().then(console.log("saved!"));
 
 var vist = new PlayerModel({
   id: '',
@@ -134,7 +134,7 @@ var vist = new PlayerModel({
   videos: []
 });
 
-vist.save();
+vist.save().then(console.log("saved!"));
 
 var smashGod = new PlayerModel({
   id: '',
@@ -146,7 +146,7 @@ var smashGod = new PlayerModel({
   videos: []
 });
 
-smashGod.save();
+smashGod.save().then(console.log("saved!"));
 
 var thumbs = new PlayerModel({
   id: '',
@@ -158,7 +158,7 @@ var thumbs = new PlayerModel({
   videos: []
 });
 
-thumbs.save();
+thumbs.save().then(console.log("saved!"));
 
 var hat = new PlayerModel({
   id: '',
@@ -170,7 +170,7 @@ var hat = new PlayerModel({
   videos: []
 });
 
-hat.save();
+hat.save().then(console.log("saved!"));
 
 var mahone = new PlayerModel({
   id: '',
@@ -182,7 +182,7 @@ var mahone = new PlayerModel({
   videos: []
 });
 
-mahone.save();
+mahone.save().then(console.log("saved!"));
 
 var sg = new PlayerModel({
   id: '',
@@ -194,7 +194,7 @@ var sg = new PlayerModel({
   videos: []
 });
 
-sg.save();
+sg.save().then(console.log("saved!"));
 
 var wenbo = new PlayerModel({
   id: '',
@@ -206,7 +206,7 @@ var wenbo = new PlayerModel({
   videos: []
 });
 
-wenbo.save();
+wenbo.save().then(console.log("saved!"));
 
 var bones = new PlayerModel({
   id: '',
@@ -218,7 +218,7 @@ var bones = new PlayerModel({
   videos: []
 });
 
-bones.save();
+bones.save().then(console.log("saved!"));
 
 var azen = new PlayerModel({
   id: '',
@@ -230,7 +230,7 @@ var azen = new PlayerModel({
   videos: []
 });
 
-azen.save();
+azen.save().then(console.log("saved!"));
 
 var junebug = new PlayerModel({
   id: '',
@@ -242,7 +242,7 @@ var junebug = new PlayerModel({
   videos: []
 });
 
-junebug.save();
+junebug.save().then(console.log("saved!"));
 
 var aglet = new PlayerModel({
   id: '',
@@ -254,4 +254,4 @@ var aglet = new PlayerModel({
   videos: []
 });
 
-aglet.save();
+aglet.save().then(console.log("saved!"));
