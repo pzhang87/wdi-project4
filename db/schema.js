@@ -13,7 +13,7 @@ var PlayerSchema = new Schema({
   team: String,
   characters: [],
   profile_image: String,
-  videos: []
+  tournaments: []
 });
 
 var VideoSchema = new Schema({

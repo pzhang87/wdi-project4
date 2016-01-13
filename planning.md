@@ -23,4 +23,8 @@ so here's the data structure:
 
 ---
 
-build a back-end. create some seed data.
+build a back-end. create some seed data. check.
+
+---
+
+abandon challonge API due to 'Access-Control-Allow-Origin' issue. work solely from youtube videos.

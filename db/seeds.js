@@ -1,5 +1,5 @@
 var mongoose = require('mongoose')
-var conn = mongoose.createConnection('mongodb://127.0.0.1:27017/pr-vods')
+var conn = mongoose.connect('mongodb://127.0.0.1:27017/pr-vods')
 var PlayerModel = require("../models/player")
 var VideoModel = require("../models/video")
 
@@ -135,3 +135,123 @@ var vist = new PlayerModel({
 });
 
 vist.save();
+
+var smashGod = new PlayerModel({
+  id: '',
+  name: "SmashGOD",
+  rank: 11,
+  team: "",
+  characters: ["Marth"],
+  profile_image: "http://placecage.com/200/200",
+  videos: []
+});
+
+smashGod.save();
+
+var thumbs = new PlayerModel({
+  id: '',
+  name: "ThumbsWayUp",
+  rank: 12,
+  team: "",
+  characters: ["Captain Falcon"],
+  profile_image: "http://placecage.com/200/200",
+  videos: []
+});
+
+thumbs.save();
+
+var hat = new PlayerModel({
+  id: '',
+  name: "Hat",
+  rank: 13,
+  team: "",
+  characters: ["Sheik"],
+  profile_image: "http://placecage.com/200/200",
+  videos: []
+});
+
+hat.save();
+
+var mahone = new PlayerModel({
+  id: '',
+  name: "Mahone",
+  rank: 14,
+  team: "",
+  characters: ["Jigglypuff"],
+  profile_image: "http://placecage.com/200/200",
+  videos: []
+});
+
+mahone.save();
+
+var sg = new PlayerModel({
+  id: '',
+  name: "SG",
+  rank: 15,
+  team: "",
+  characters: ["Fox"],
+  profile_image: "http://placecage.com/200/200",
+  videos: []
+});
+
+sg.save();
+
+var wenbo = new PlayerModel({
+  id: '',
+  name: "Wenbobular",
+  rank: 16,
+  team: "",
+  characters: ["Fox, Falco"],
+  profile_image: "http://placecage.com/200/200",
+  videos: []
+});
+
+wenbo.save();
+
+var bones = new PlayerModel({
+  id: '',
+  name: "Bones",
+  rank: 17,
+  team: "",
+  characters: ["Falco"],
+  profile_image: "http://placecage.com/200/200",
+  videos: []
+});
+
+bones.save();
+
+var azen = new PlayerModel({
+  id: '',
+  name: "Azen Zagenite",
+  rank: 18,
+  team: "",
+  characters: ["Marth"],
+  profile_image: "http://placecage.com/200/200",
+  videos: []
+});
+
+azen.save();
+
+var junebug = new PlayerModel({
+  id: '',
+  name: "Junebug",
+  rank: 19,
+  team: "",
+  characters: ["Sheik"],
+  profile_image: "http://placecage.com/200/200",
+  videos: []
+});
+
+junebug.save();
+
+var aglet = new PlayerModel({
+  id: '',
+  name: "Aglet",
+  rank: 20,
+  team: "",
+  characters: ["Jigglypuff"],
+  profile_image: "http://placecage.com/200/200",
+  videos: []
+});
+
+aglet.save();
