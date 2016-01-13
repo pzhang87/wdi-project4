@@ -15,5 +15,8 @@
     "jasmine": "^2.4.1",
     "kerberos": "0.0.17",
     "mongoose": "^4.3.5"
+  },
+  "engines": {
+    "node": ">=0.10.0"
   }
 }
