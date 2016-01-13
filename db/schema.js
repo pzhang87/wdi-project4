@@ -7,16 +7,19 @@ var Schema = mongoose.Schema,
 
 //define schema for player
 var PlayerSchema = new Schema({
-    id: Number,
-    name: String,
-    rank: Number,
-    profile_image: String,
-    image: String,
-    videos: [],
-  });
+  challonge_id: Number,
+  name: String,
+  rank: Number,
+  team: String,
+  characters: [],
+  profile_image: String,
+  videos: []
+});
 
-var VideoSchema = new Schmea({
-  link: String
+var VideoSchema = new Schema({
+  link: String,
+  title: String
 })
 
 var Player = mongoose.model("Player", PlayerSchema)
+var Video = mongoose.model("Video", VideoSchema)
