@@ -5,11 +5,7 @@ App = {
   Routers: {}
 }
 
-$(document).ready(function(){
-  var players = new App.Collections.Players();
-  var playersList = new App.Views.PlayersList({collection: players});
-  players.fetch()
-  .then(function(){
-    console.log("what do I need a promise here for?")
-  });
-})
+$(document).ready(function() {
+  App.Routers.player = new App.Routers.Player();
+  Backbone.history.start();
+});

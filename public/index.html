@@ -13,6 +13,8 @@
     <script src="./js/collections/players.js"></script>
     <script src="./js/views/player.js"></script>
     <script src="./js/views/playersList.js"></script>
+    <script src="./js/routers/player.js"></script>
+
 
   </head>
 <body>
@@ -20,10 +22,30 @@
   <div id="playerslist"></div>
   <script id="playerTemplate" type="text/x-handlebars-template">
     <div class="player">
-      <span>
-        <h3>{{rank}} - {{name}}</h3>
-        <div class="profileImage"></div>
-      </span>
+      <div class="profileImage">
+        <img src="{{profile_image}}" alt="">
+      </div>
+    </div>
+  </script>
+
+  <script id="infoTemplate" type="text/x-handlebars-template">
+    <div class="playerInfo">
+      <img src="{{profile_image}}" alt="">
+    <p>
+      {{rank}} - {{name}}
+      {{#if team}}
+        - Team: {{team}}
+      {{/if}}
+    </p>
+    <p>
+      Characters:
+      <ul>
+        {{#each characters}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </p>
+    <button class="close">Close</button>
     </div>
   </script>
 </body>

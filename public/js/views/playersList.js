@@ -13,7 +13,7 @@ App.Views.PlayersList = Backbone.View.extend({
 
   renderOne: function(player){
     var view = new App.Views.Player({model: player});
-    this.$el.prepend(view.$el)
+    this.$el.append(view.$el)
   },
 
   renderAll: function(){
