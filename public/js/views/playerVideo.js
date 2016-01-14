@@ -1,4 +1,4 @@
-App.Views.Player = Backbone.View.extend({
+App.Views.PlayerVideo = Backbone.View.extend({
   tagName: "div",
   className: "playerVideo",
   events: {

@@ -2,7 +2,7 @@ App.Views.Player = Backbone.View.extend({
   tagName: "div",
   className: "player",
   events: {
-    "click .player": "renderInfo",
+    "click .open": "renderInfo",
     "click .close": "render"
   },
 
@@ -13,10 +13,12 @@ App.Views.Player = Backbone.View.extend({
     this.render();
   },
   render: function(){
+    App.Routers.player.navigate('')
     this.$el.html(this.template(this.model.toJSON()));
   },
 
   renderInfo: function(){
     this.$el.html(this.infoTemplate(this.model.toJSON()))
+    App.Routers.player.navigate("players/"+this.model.name)
   }
 })

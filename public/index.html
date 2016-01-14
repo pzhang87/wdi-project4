@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Power Ranking VODs Tracker</title>
   <script src="./bower_components/jquery/dist/jquery.min.js"></script>
   <script src="./bower_components/underscore/underscore-min.js"></script>
@@ -15,13 +16,21 @@
     <script src="./js/views/playersList.js"></script>
     <script src="./js/routers/player.js"></script>
 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
   </head>
 <body>
   <div class="title"><h2>MD/VA SSBM Power Rankings</h2></div>
   <div id="playerslist"></div>
   <script id="playerTemplate" type="text/x-handlebars-template">
-    <div class="player">
+    <div class="player well col-md-3 open">
       <div class="profileImage">
         <img src="{{profile_image}}" alt="">
       </div>
@@ -29,24 +38,31 @@
   </script>
 
   <script id="infoTemplate" type="text/x-handlebars-template">
-    <div class="playerInfo">
-      <img src="{{profile_image}}" alt="">
-    <p>
-      {{rank}} - {{name}}
-      {{#if team}}
-        - Team: {{team}}
-      {{/if}}
-    </p>
-    <p>
-      Characters:
-      <ul>
-        {{#each characters}}
-          <li>{{this}}</li>
-        {{/each}}
-      </ul>
-    </p>
-    <a href="#players/{{name}}">view VODs</a>
-    <button class="close">Close</button>
+    <div class="player well col-md-3">
+
+      <div class="playerInfo">
+        <p>
+          <p>Rank: {{rank}}</p>
+          <p>Tag: {{name}}</p>
+            <p>Team:
+              {{#if team}}
+                {{team}}
+              {{else}}
+                N/A
+              {{/if}}
+            </p>
+        </p>
+        <p>
+          Characters:
+          <ul>
+            {{#each characters}}
+              <li>{{this}}</li>
+            {{/each}}
+          </ul>
+        </p>
+        <a href="#players/{{name}}/videos">view VODs</a>
+        <button class="close">Close</button>
+      </div>
     </div>
   </script>
 </body>
