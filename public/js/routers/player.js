@@ -2,7 +2,7 @@ App.Routers.Player = Backbone.Router.extend({
   routes: {
     '_' : 'index',
     '' : 'index',
-    ':name' : 'showPlayer',
+    ':id' : 'showPlayer'
   },
   initialize: function(){
     App.Collections.players = new App.Collections.Players();
@@ -13,6 +13,11 @@ App.Routers.Player = Backbone.Router.extend({
   },
 
   showPlayer: function(){
-    console.log("stuff happens here")
+    console.log("this should show the player")
+    App.Collections.players.fetch().then(function(){
+       view = App.Views.playersList.findView(id);
+       App.Views.playerVideos.render(view.model);
+    });
   }
+
 });
