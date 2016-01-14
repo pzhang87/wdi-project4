@@ -3,12 +3,14 @@ App.Views.Player = Backbone.View.extend({
   className: "player",
   events: {
     "click .open": "renderInfo",
-    "click .close": "render"
+    "click .close": "render",
+    "click .vods": "renderVideoView"
   },
 
   initialize: function(){
     this.template = Handlebars.compile($("#playerTemplate").html())
     this.infoTemplate = Handlebars.compile($("#infoTemplate").html())
+    this.videoTemplate = Handlebars.compile($("#playerVideoTemplate").html())
     this.listenTo(this.model, "change", this.render)
     this.render();
   },
@@ -19,6 +21,9 @@ App.Views.Player = Backbone.View.extend({
 
   renderInfo: function(){
     this.$el.html(this.infoTemplate(this.model.toJSON()))
-    App.Routers.player.navigate("players/"+this.model.name)
+  },
+
+  renderVideoView: function(){
+    this.$el.html(this.videoTemplate(this.model.toJSON()))
   }
 })

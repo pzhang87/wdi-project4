@@ -1,13 +1,13 @@
 var mongoose = require('mongoose')
-var conn = mongoose.connect('mongodb://127.0.0.1:27017/pr-vods')
+// var conn = mongoose.connect('mongodb://127.0.0.1:27017/pr-vods')
 var PlayerModel = require("../models/player")
-// var VideoModel = require("../models/video")
+var VideoModel = require("../models/video")
 
-conn.on("error", function(err){
-  console.log("Oops! Mongo threw an error. Is `mongod` running?");
-  console.log(err.message);
-  process.exit();
-});
+// conn.on("error", function(err){
+//   console.log("Oops! Mongo threw an error. Is `mongod` running?");
+//   console.log(err.message);
+//   process.exit();
+// });
 
 PlayerModel.remove({}, function(err){
   console.log(err)
@@ -22,7 +22,7 @@ var nintendude = new PlayerModel({
   rank: 1,
   team: "Splyce",
   characters: ["Ice Climbers"],
-  profile_image: "http://placecage.com/200/200",
+  profile_image: "https://i.redditmedia.com/ZI4pZLLTY8BJ8GBaHwIJOk_llRCY_rS26dH1RVbz1Oc.jpg?w=320&s=e760689b6b2a231e685c27a483d84426",
   videos: []
 });
 
@@ -34,7 +34,7 @@ var chillindude = new PlayerModel({
   rank: 2,
   team: "Team Liquid",
   characters: ["Fox"],
-  profile_image: "http://placecage.com/200/200",
+  profile_image: "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/3c/3c941fdf953f5678bef7f22ba62b07401098ce19_full.jpg",
   videos: [],
 });
 
@@ -46,7 +46,7 @@ var redd = new PlayerModel({
   rank: 3,
   team: "VGBootcamp",
   characters: ["Fox"],
-  profile_image: "http://placecage.com/200/200",
+  profile_image: "https://pbs.twimg.com/profile_images/631258499037528064/Dp3LbZK5_400x400.jpg",
   videos: [],
 });
 
@@ -58,7 +58,7 @@ var chudat = new PlayerModel({
   rank: 4,
   team: "",
   characters: ["Ice Climbers, Young Link"],
-  profile_image: "http://placecage.com/200/200",
+  profile_image: "https://meleeitonme.files.wordpress.com/2013/12/22chudat-e1387130730399.jpg",
   videos: [],
 });
 
@@ -70,7 +70,7 @@ var milkman = new PlayerModel({
   rank: 5,
   team: "",
   characters: ["Fox"],
-  profile_image: "http://placecage.com/200/200",
+  profile_image: "http://www.meleeitonme.com/wp-content/uploads/98_milkman-300x298.jpeg",
   videos: [],
 });
 
@@ -94,7 +94,7 @@ var plank = new PlayerModel({
   rank: 7,
   team: "",
   characters: ["Sheik"],
-  profile_image: "http://placecage.com/200/200",
+  profile_image: "https://pbs.twimg.com/profile_images/625750286569750529/9rs1c4CJ.jpg",
   videos: []
 });
 
@@ -106,7 +106,7 @@ var cyrain = new PlayerModel({
   rank: 8,
   team: "",
   characters: ["Fox"],
-  profile_image: "http://placecage.com/200/200",
+  profile_image: "https://meleeitonme.files.wordpress.com/2013/12/57cyrain-e1386573662356.jpg",
   videos: []
 });
 
@@ -118,7 +118,7 @@ var doh = new PlayerModel({
   rank: 9,
   team: "",
   characters: ["Peach"],
-  profile_image: "http://placecage.com/200/200",
+  profile_image: "http://www.meleeitonme.com/wp-content/uploads/79_DoH-300x300.jpg",
   videos: []
 });
 
@@ -130,7 +130,7 @@ var vist = new PlayerModel({
   rank: 10,
   team: "",
   characters: ["Luigi"],
-  profile_image: "http://placecage.com/200/200",
+  profile_image: "http://www.ssbwiki.com/images/3/37/Vist.png",
   videos: []
 });
 

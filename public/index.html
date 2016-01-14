@@ -25,10 +25,11 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="./styles.css">
   </head>
 <body>
   <div class="title"><h2>MD/VA SSBM Power Rankings</h2></div>
-  <div id="playerslist"></div>
+  <div id="playerslist" class="row"></div>
   <script id="playerTemplate" type="text/x-handlebars-template">
     <div class="player well col-md-3 open">
       <div class="profileImage">
@@ -42,8 +43,8 @@
 
       <div class="playerInfo">
         <p>
+          <p>{{name}}</p>
           <p>Rank: {{rank}}</p>
-          <p>Tag: {{name}}</p>
             <p>Team:
               {{#if team}}
                 {{team}}
@@ -54,16 +55,31 @@
         </p>
         <p>
           Characters:
-          <ul>
             {{#each characters}}
-              <li>{{this}}</li>
+              {{this}}
             {{/each}}
-          </ul>
         </p>
-        <a href="#players/{{name}}/videos">view VODs</a>
+        <a href="#players/{{name}}/videos" class="vods">view highlights</a>
         <button class="close">Close</button>
       </div>
     </div>
   </script>
+
+
+  <script id="playerVideoTemplate" type="text/x-handlebars-template">
+    <div class="player well col-md-3">
+
+      <div class="playerInfo">
+        <p>
+          <iframe id="player" type="text/html" height="250"
+          src="http://www.youtube.com/embed/{{video}}?enablejsapi=1"
+          frameborder="0"></iframe>
+        <button class="close">Close</button>
+
+      </div>
+    </div>
+  </script>
+
+
 </body>
 </html>

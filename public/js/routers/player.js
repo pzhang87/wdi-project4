@@ -10,14 +10,6 @@ App.Routers.Player = Backbone.Router.extend({
   },
   index: function(){
     App.Collections.players.fetch();
-  },
-
-  showPlayer: function(){
-    console.log("this should show the player")
-    App.Collections.players.fetch().then(function(){
-       view = App.Views.playersList.findView(id);
-       App.Views.playerVideos.render(view.model);
-    });
   }
 
 });
