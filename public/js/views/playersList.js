@@ -20,5 +20,5 @@ App.Views.PlayersList = Backbone.View.extend({
     this.$el.empty();
     this.collection.each(this.renderOne.bind(this));
   }
-  
+
 })

@@ -4,6 +4,8 @@ var app = express();
 
 //db requirements
 var mongoose = require('mongoose');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://127.0.0.1:27017/pr-vods');
+
 var Player = require("./models/player");
 var Video = require("./models/video");
 
