@@ -20,6 +20,7 @@ App.Views.Player = Backbone.View.extend({
   },
 
   renderInfo: function(){
+    App.Routers.player.navigate('players/'+this.model.get("name"))
     this.$el.html(this.infoTemplate(this.model.toJSON()))
   },
 

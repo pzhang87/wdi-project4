@@ -23,7 +23,7 @@ var nintendude = new PlayerModel({
   team: "Splyce",
   characters: ["Ice Climbers"],
   profile_image: "https://i.redditmedia.com/ZI4pZLLTY8BJ8GBaHwIJOk_llRCY_rS26dH1RVbz1Oc.jpg?w=320&s=e760689b6b2a231e685c27a483d84426",
-  videos: []
+  video: "vk6U1l1Kt4s"
 });
 
 nintendude.save().then(console.log("saved!"));
@@ -35,7 +35,7 @@ var chillindude = new PlayerModel({
   team: "Team Liquid",
   characters: ["Fox"],
   profile_image: "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/3c/3c941fdf953f5678bef7f22ba62b07401098ce19_full.jpg",
-  videos: [],
+  video: "KhsOW-_TwfU",
 });
 
 chillindude.save().then(console.log("saved!"));
@@ -47,7 +47,7 @@ var redd = new PlayerModel({
   team: "VGBootcamp",
   characters: ["Fox"],
   profile_image: "https://pbs.twimg.com/profile_images/631258499037528064/Dp3LbZK5_400x400.jpg",
-  videos: [],
+  video: "4ihENhKTbs0",
 });
 
 redd.save().then(console.log("saved!"));
@@ -59,7 +59,7 @@ var chudat = new PlayerModel({
   team: "",
   characters: ["Ice Climbers, Young Link"],
   profile_image: "https://meleeitonme.files.wordpress.com/2013/12/22chudat-e1387130730399.jpg",
-  videos: [],
+  video: "T98uKLWpl9E",
 });
 
 chudat.save().then(console.log("saved!"));
@@ -71,7 +71,7 @@ var milkman = new PlayerModel({
   team: "",
   characters: ["Fox"],
   profile_image: "http://www.meleeitonme.com/wp-content/uploads/98_milkman-300x298.jpeg",
-  videos: [],
+  video: "Fd6xjrKYQDk",
 });
 
 milkman.save().then(console.log("saved!"));
@@ -83,7 +83,7 @@ var llod = new PlayerModel({
   team: "",
   characters: ["Peach"],
   profile_image: "http://placecage.com/200/200",
-  videos: []
+  video: "9BTGcIv2laA"
 });
 
 llod.save().then(console.log("saved!"));
@@ -95,7 +95,7 @@ var plank = new PlayerModel({
   team: "",
   characters: ["Sheik"],
   profile_image: "https://pbs.twimg.com/profile_images/625750286569750529/9rs1c4CJ.jpg",
-  videos: []
+  video: "1TqHKnUvF1w"
 });
 
 plank.save().then(console.log("saved!"));
@@ -107,7 +107,7 @@ var cyrain = new PlayerModel({
   team: "",
   characters: ["Fox"],
   profile_image: "https://meleeitonme.files.wordpress.com/2013/12/57cyrain-e1386573662356.jpg",
-  videos: []
+  video: "RpabZ_1VcVU"
 });
 
 cyrain.save().then(console.log("saved!"));
@@ -119,7 +119,7 @@ var doh = new PlayerModel({
   team: "",
   characters: ["Peach"],
   profile_image: "http://www.meleeitonme.com/wp-content/uploads/79_DoH-300x300.jpg",
-  videos: []
+  video: ""
 });
 
 doh.save().then(console.log("saved!"));
@@ -131,7 +131,7 @@ var vist = new PlayerModel({
   team: "",
   characters: ["Luigi"],
   profile_image: "http://www.ssbwiki.com/images/3/37/Vist.png",
-  videos: []
+  video: "ilC2EOjtT2I"
 });
 
 vist.save().then(console.log("saved!"));
@@ -143,7 +143,7 @@ var smashGod = new PlayerModel({
   team: "",
   characters: ["Marth"],
   profile_image: "http://placecage.com/200/200",
-  videos: []
+  video: "ilC2EOjtT2I"
 });
 
 smashGod.save().then(console.log("saved!"));
@@ -155,7 +155,7 @@ var thumbs = new PlayerModel({
   team: "",
   characters: ["Captain Falcon"],
   profile_image: "http://placecage.com/200/200",
-  videos: []
+  video: "FQ1ELFXVSoo"
 });
 
 thumbs.save().then(console.log("saved!"));
@@ -167,7 +167,7 @@ var hat = new PlayerModel({
   team: "",
   characters: ["Sheik"],
   profile_image: "http://placecage.com/200/200",
-  videos: []
+  video: ""
 });
 
 hat.save().then(console.log("saved!"));
@@ -179,7 +179,7 @@ var mahone = new PlayerModel({
   team: "",
   characters: ["Jigglypuff"],
   profile_image: "http://placecage.com/200/200",
-  videos: []
+  video: ""
 });
 
 mahone.save().then(console.log("saved!"));
@@ -191,7 +191,7 @@ var sg = new PlayerModel({
   team: "",
   characters: ["Fox"],
   profile_image: "http://placecage.com/200/200",
-  videos: []
+  video: "4ihENhKTbs0"
 });
 
 sg.save().then(console.log("saved!"));
@@ -203,7 +203,7 @@ var wenbo = new PlayerModel({
   team: "",
   characters: ["Fox, Falco"],
   profile_image: "http://placecage.com/200/200",
-  videos: []
+  video: "yAs6GgXVYCY"
 });
 
 wenbo.save().then(console.log("saved!"));
@@ -215,7 +215,7 @@ var bones = new PlayerModel({
   team: "",
   characters: ["Falco"],
   profile_image: "http://placecage.com/200/200",
-  videos: []
+  video: ""
 });
 
 bones.save().then(console.log("saved!"));
@@ -227,7 +227,7 @@ var azen = new PlayerModel({
   team: "",
   characters: ["Marth"],
   profile_image: "http://placecage.com/200/200",
-  videos: []
+  video: ""
 });
 
 azen.save().then(console.log("saved!"));
@@ -239,7 +239,7 @@ var junebug = new PlayerModel({
   team: "",
   characters: ["Sheik"],
   profile_image: "http://placecage.com/200/200",
-  videos: []
+  video: ""
 });
 
 junebug.save().then(console.log("saved!"));
@@ -251,7 +251,7 @@ var aglet = new PlayerModel({
   team: "",
   characters: ["Jigglypuff"],
   profile_image: "http://placecage.com/200/200",
-  videos: []
+  video: ""
 });
 
 aglet.save().then(console.log("saved!"));
