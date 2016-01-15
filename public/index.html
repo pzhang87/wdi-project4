@@ -70,6 +70,25 @@
     </div>
   </script>
 
+  <script id="editTemplate" type="text/x-handlebars-template">
+    <div class="player well col-md-3">
+    <form class="playerForm">
+      <div>
+        <fieldset>
+          <label>Photo URL:</label>
+          <div><input type="text" name="photoUrl" value="{{ photoUrl }}"></div>
+        </fieldset>
+        <fieldset>
+          <label>&nbsp;</label>
+          <div>
+            <button class="submit">Submit</button>
+            <button class="close">Cancel</button>
+          </div>
+        </fieldset>
+      </div>
+    </form>
+    </div>
+  </script>
 
   <script id="playerVideoTemplate" type="text/x-handlebars-template">
     <div class="player well col-md-3">
