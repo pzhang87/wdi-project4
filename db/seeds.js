@@ -1,13 +1,13 @@
 var mongoose = require('mongoose')
-var conn = mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://127.0.0.1:27017/pr-vods')
+// var conn = mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://127.0.0.1:27017/pr-vods')
 var PlayerModel = require("../models/player")
 var VideoModel = require("../models/video")
 
-conn.on("error", function(err){
-  console.log("Oops! Mongo threw an error. Is `mongod` running?");
-  console.log(err.message);
-  process.exit();
-});
+// conn.on("error", function(err){
+//   console.log("Oops! Mongo threw an error. Is `mongod` running?");
+//   console.log(err.message);
+//   process.exit();
+// });
 
 PlayerModel.remove({}, function(err){
   console.log(err)
