@@ -1,5 +1,5 @@
 var mongoose = require('mongoose')
-// var conn = mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://127.0.0.1:27017/pr-vods')
+var schema = require('./schema')
 var PlayerModel = require("../models/player")
 var VideoModel = require("../models/video")
 
