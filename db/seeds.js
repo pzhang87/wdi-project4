@@ -57,7 +57,7 @@ var chudat = new PlayerModel({
   name: "ChuDat",
   rank: 4,
   team: "",
-  characters: ["Ice Climbers, Young Link"],
+  characters: ["Ice Climbers, Y. Link"],
   profile_image: "https://meleeitonme.files.wordpress.com/2013/12/22chudat-e1387130730399.jpg",
   video: "T98uKLWpl9E",
 });
@@ -102,7 +102,7 @@ plank.save().then(console.log("saved!"));
 
 var cyrain = new PlayerModel({
   id: '',
-  name: "Plank",
+  name: "Cyrain",
   rank: 8,
   team: "",
   characters: ["Fox"],

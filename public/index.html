@@ -34,9 +34,9 @@
   </head>
 <body>
   <div class="title"><h2>MD/VA SSBM Power Rankings</h2></div>
-  <div id="playerslist" class="row"></div>
+  <div id="playerslist" class="playerslist well"></div>
   <script id="playerTemplate" type="text/x-handlebars-template">
-    <div class="player well col-md-3 open">
+    <div class="player col-md-3 open">
       <div class="profileImage">
         <img src="{{profile_image}}" alt="">
       </div>
@@ -44,34 +44,37 @@
   </script>
 
   <script id="infoTemplate" type="text/x-handlebars-template">
-    <div class="player well col-md-3">
+    <div class="player col-md-3">
 
       <div class="playerInfo">
-        <p>
-          <p>{{name}}</p>
-          <p>Rank: {{rank}}</p>
-            <p>Team:
-              {{#if team}}
-                {{team}}
-              {{else}}
-                N/A
-              {{/if}}
-            </p>
-        </p>
-        <p>
+        <div class="infofield"><h3>{{name}}</h3></div>
+
+        <div class="infofield">Rank: {{rank}}</div>
+
+        <div class="infofield">
+          Team:
+          {{#if team}}
+            {{team}}
+          {{else}}
+            N/A
+          {{/if}}
+        </div>
+
+        <div class="infofield">
           Characters:
             {{#each characters}}
               {{this}}
             {{/each}}
-        </p>
-        <a href="#players/{{name}}/videos" class="vods">view highlights</a>
+        </div>
+        <div class="infofield"><a href="#players/{{name}}/videos" class="vods">view highlights</a></p>
         <button class="close">Close</button>
       </div>
     </div>
+  </div>
   </script>
 
   <script id="editTemplate" type="text/x-handlebars-template">
-    <div class="player well col-md-3">
+    <div class="player col-md-3">
     <form class="playerForm">
       <div>
         <fieldset>
@@ -91,14 +94,12 @@
   </script>
 
   <script id="playerVideoTemplate" type="text/x-handlebars-template">
-    <div class="player well col-md-3">
-
+    <div class="player col-md-3">
       <div class="playerInfo">
-        <p>
-          <iframe id="player" type="text/html" height="250"
-          src="http://www.youtube.com/embed/{{video}}?enablejsapi=1"
-          frameborder="0"></iframe>
-        <button class="close">Close</button>
+        <iframe id="player" type="text/html" height="250"
+        src="http://www.youtube.com/embed/{{video}}?enablejsapi=1"
+        frameborder="0"></iframe>
+      <button class="close">Close</button>
 
       </div>
     </div>
