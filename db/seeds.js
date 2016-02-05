@@ -22,7 +22,7 @@ var nintendude = new PlayerModel({
   rank: 1,
   team: "Splyce",
   characters: ["Ice Climbers"],
-  profile_image: "https://i.redditmedia.com/ZI4pZLLTY8BJ8GBaHwIJOk_llRCY_rS26dH1RVbz1Oc.jpg?w=320&s=e760689b6b2a231e685c27a483d84426",
+  profile_image: "http://i.imgur.com/xKXsb4R.jpg",
   video: "vk6U1l1Kt4s"
 });
 
@@ -34,7 +34,7 @@ var chillindude = new PlayerModel({
   rank: 2,
   team: "Team Liquid",
   characters: ["Fox"],
-  profile_image: "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/3c/3c941fdf953f5678bef7f22ba62b07401098ce19_full.jpg",
+  profile_image: "https://i.ytimg.com/vi/z7ZC3yKhwy0/hqdefault.jpg",
   video: "KhsOW-_TwfU",
 });
 
@@ -82,7 +82,7 @@ var llod = new PlayerModel({
   rank: 6,
   team: "",
   characters: ["Peach"],
-  profile_image: "http://placecage.com/200/200",
+  profile_image: "http://i.imgur.com/39TRtgp.jpg",
   video: "9BTGcIv2laA"
 });
 
@@ -142,7 +142,7 @@ var smashGod = new PlayerModel({
   rank: 11,
   team: "",
   characters: ["Marth"],
-  profile_image: "http://placecage.com/200/200",
+  profile_image: "http://imgur.com/a/48hA2",
   video: "ilC2EOjtT2I"
 });
 
@@ -154,7 +154,7 @@ var thumbs = new PlayerModel({
   rank: 12,
   team: "",
   characters: ["Captain Falcon"],
-  profile_image: "http://placecage.com/200/200",
+  profile_image: "http://i.imgur.com/EJVy50h.jpg",
   video: "FQ1ELFXVSoo"
 });
 
@@ -166,7 +166,7 @@ var hat = new PlayerModel({
   rank: 13,
   team: "",
   characters: ["Sheik"],
-  profile_image: "http://placecage.com/200/200",
+  profile_image: "http://imgur.com/a/48hA2",
   video: ""
 });
 
@@ -178,7 +178,7 @@ var mahone = new PlayerModel({
   rank: 14,
   team: "",
   characters: ["Jigglypuff"],
-  profile_image: "http://placecage.com/200/200",
+  profile_image: "http://imgur.com/a/48hA2",
   video: ""
 });
 
@@ -190,7 +190,7 @@ var sg = new PlayerModel({
   rank: 15,
   team: "",
   characters: ["Fox"],
-  profile_image: "http://placecage.com/200/200",
+  profile_image: "http://i.imgur.com/8Gd8TeN.jpg",
   video: "4ihENhKTbs0"
 });
 
@@ -202,7 +202,7 @@ var wenbo = new PlayerModel({
   rank: 16,
   team: "",
   characters: ["Fox, Falco"],
-  profile_image: "http://placecage.com/200/200",
+  profile_image: "http://i.imgur.com/ZMovfzy.jpg",
   video: "yAs6GgXVYCY"
 });
 
@@ -214,7 +214,7 @@ var bones = new PlayerModel({
   rank: 17,
   team: "",
   characters: ["Falco"],
-  profile_image: "http://placecage.com/200/200",
+  profile_image: "http://imgur.com/a/48hA2",
   video: ""
 });
 
@@ -226,7 +226,7 @@ var azen = new PlayerModel({
   rank: 18,
   team: "",
   characters: ["Marth"],
-  profile_image: "http://placecage.com/200/200",
+  profile_image: "http://i.imgur.com/0DFiYML.png",
   video: ""
 });
 
@@ -238,7 +238,7 @@ var junebug = new PlayerModel({
   rank: 19,
   team: "",
   characters: ["Sheik"],
-  profile_image: "http://placecage.com/200/200",
+  profile_image: "http://imgur.com/a/48hA2",
   video: ""
 });
 
@@ -250,7 +250,7 @@ var aglet = new PlayerModel({
   rank: 20,
   team: "",
   characters: ["Jigglypuff"],
-  profile_image: "http://placecage.com/200/200",
+  profile_image: "http://imgur.com/a/48hA2",
   video: ""
 });
 
