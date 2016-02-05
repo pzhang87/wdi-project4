@@ -119,7 +119,7 @@ var doh = new PlayerModel({
   team: "",
   characters: ["Peach"],
   profile_image: "http://www.meleeitonme.com/wp-content/uploads/79_DoH-300x300.jpg",
-  video: ""
+  video: "IgVaz8gGo2s"
 });
 
 doh.save().then(console.log("saved!"));
@@ -167,7 +167,7 @@ var hat = new PlayerModel({
   team: "",
   characters: ["Sheik"],
   profile_image: "http://i.imgur.com/t9SCV91.jpg",
-  video: ""
+  video: "GijJVZtGqWc"
 });
 
 hat.save().then(console.log("saved!"));
@@ -179,7 +179,7 @@ var mahone = new PlayerModel({
   team: "",
   characters: ["Jigglypuff"],
   profile_image: "http://i.imgur.com/t9SCV91.jpg",
-  video: ""
+  video: "JTJDSVBKDCA"
 });
 
 mahone.save().then(console.log("saved!"));
@@ -215,7 +215,7 @@ var bones = new PlayerModel({
   team: "",
   characters: ["Falco"],
   profile_image: "http://i.imgur.com/t9SCV91.jpg",
-  video: ""
+  video: "I2MLDYPiR4I"
 });
 
 bones.save().then(console.log("saved!"));
@@ -227,7 +227,7 @@ var azen = new PlayerModel({
   team: "",
   characters: ["Marth"],
   profile_image: "http://i.imgur.com/0DFiYML.png",
-  video: ""
+  video: "LxL6px8hnyE"
 });
 
 azen.save().then(console.log("saved!"));
@@ -239,7 +239,7 @@ var junebug = new PlayerModel({
   team: "",
   characters: ["Sheik"],
   profile_image: "http://i.imgur.com/t9SCV91.jpg",
-  video: ""
+  video: "ZdAy9jWabAc"
 });
 
 junebug.save().then(console.log("saved!"));
@@ -251,7 +251,7 @@ var aglet = new PlayerModel({
   team: "",
   characters: ["Jigglypuff"],
   profile_image: "http://i.imgur.com/t9SCV91.jpg",
-  video: ""
+  video: "uv9Ab-0hfzI"
 });
 
 aglet.save().then(console.log("saved!"));
