@@ -34,9 +34,9 @@
   </head>
 <body>
   <div class="title"><h2>MD/VA SSBM Power Rankings</h2></div>
-  <div id="playerslist" class="playerslist well"></div>
+  <div id="playerslist" class="playerslist"></div>
   <script id="playerTemplate" type="text/x-handlebars-template">
-    <div class="player col-md-3 open">
+    <div class="player open">
       <div class="profileImage">
         <img src="{{profile_image}}" alt="">
       </div>
@@ -44,7 +44,7 @@
   </script>
 
   <script id="infoTemplate" type="text/x-handlebars-template">
-    <div class="player col-md-3">
+    <div class="player">
 
       <div class="playerInfo">
         <div class="infofield"><h3>{{name}}</h3></div>
@@ -74,7 +74,7 @@
   </script>
 
   <script id="editTemplate" type="text/x-handlebars-template">
-    <div class="player col-md-3">
+    <div class="player">
     <form class="playerForm">
       <div>
         <fieldset>
@@ -94,7 +94,7 @@
   </script>
 
   <script id="playerVideoTemplate" type="text/x-handlebars-template">
-    <div class="player col-md-3">
+    <div class="player">
       <div class="playerInfo">
         <iframe id="player" type="text/html" height="250"
         src="http://www.youtube.com/embed/{{video}}?enablejsapi=1"

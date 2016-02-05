@@ -1,16 +1,24 @@
-.well {
+.title {
+  margin: 1em;
+}
+
+.playerlist {
+  margin: 1em;
+  width: 100%;
+}
+
+.player {
+  height: 320px;
+  width: 320px;
+  float: left;
   overflow: auto;
+  flex-grow: 1;
+  background-color: #EEEEEE;
+  border-radius: 1em;
 }
 
 img {
   width: 100%;
-  border-radius: 1em;
-}
-
-.player {
-  border: 1em;
-  border-color: #000000;
-  background-color: #EFEFEF;
   border-radius: 1em;
 }
 
@@ -24,6 +32,7 @@ img {
 }
 
 .profileImage {
+  position: relative;
   margin: 0.5em;
-  height: 300px;
+  width: 300px;
 }
