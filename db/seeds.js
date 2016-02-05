@@ -142,7 +142,7 @@ var smashGod = new PlayerModel({
   rank: 11,
   team: "",
   characters: ["Marth"],
-  profile_image: "http://imgur.com/a/48hA2",
+  profile_image: "http://i.imgur.com/t9SCV91.jpg",
   video: "ilC2EOjtT2I"
 });
 
@@ -166,7 +166,7 @@ var hat = new PlayerModel({
   rank: 13,
   team: "",
   characters: ["Sheik"],
-  profile_image: "http://imgur.com/a/48hA2",
+  profile_image: "http://i.imgur.com/t9SCV91.jpg",
   video: ""
 });
 
@@ -178,7 +178,7 @@ var mahone = new PlayerModel({
   rank: 14,
   team: "",
   characters: ["Jigglypuff"],
-  profile_image: "http://imgur.com/a/48hA2",
+  profile_image: "http://i.imgur.com/t9SCV91.jpg",
   video: ""
 });
 
@@ -214,7 +214,7 @@ var bones = new PlayerModel({
   rank: 17,
   team: "",
   characters: ["Falco"],
-  profile_image: "http://imgur.com/a/48hA2",
+  profile_image: "http://i.imgur.com/t9SCV91.jpg",
   video: ""
 });
 
@@ -238,7 +238,7 @@ var junebug = new PlayerModel({
   rank: 19,
   team: "",
   characters: ["Sheik"],
-  profile_image: "http://imgur.com/a/48hA2",
+  profile_image: "http://i.imgur.com/t9SCV91.jpg",
   video: ""
 });
 
@@ -250,7 +250,7 @@ var aglet = new PlayerModel({
   rank: 20,
   team: "",
   characters: ["Jigglypuff"],
-  profile_image: "http://imgur.com/a/48hA2",
+  profile_image: "http://i.imgur.com/t9SCV91.jpg",
   video: ""
 });
 
