@@ -34,7 +34,7 @@ var chillindude = new PlayerModel({
   rank: 2,
   team: "Team Liquid",
   characters: ["Fox"],
-  profile_image: "https://i.ytimg.com/vi/z7ZC3yKhwy0/hqdefault.jpg",
+  profile_image: "http://imgur.com/WaidhiC.jpg",
   video: "KhsOW-_TwfU",
 });
 
